@@ -1,0 +1,16 @@
+# app-ads.txt for My Day — PLACEHOLDER, TODO before ads go live.
+#
+# This file must be served at the ROOT of the developer website entered in
+# Google Play Console / App Store Connect (https://<domain>/app-ads.txt), see
+# docs/runbooks/site.md.
+#
+# When the AdMob account exists: AdMob -> Apps -> View all apps ->
+# "app-ads.txt" (or Settings -> Account information) shows ONE line with
+# YOUR publisher id. Add that exact line below this comment, without the
+# leading "#", for example:
+#
+#   google.com, pub-0000000000000000, DIRECT, f08c47fec0942fa0
+#
+# (google.com = AdMob, pub-… = your publisher id, DIRECT = you own the
+# account, f08c47fec0942fa0 = Google's certification authority id.)
+# Lines starting with "#" are comments and are ignored by ad networks.

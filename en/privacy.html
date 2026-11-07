@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacy policy — My Day</title>
+  <meta name="description" content="My Day: record how you feel each day. Your data stays on your phone.">
+  <meta name="color-scheme" content="light dark">
+  <link rel="icon" href="../assets/icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../assets/style.css">
+  <link rel="alternate" hreflang="vi" href="../vi/privacy.html">
+  <link rel="alternate" hreflang="ja" href="../ja/privacy.html">
+  <link rel="alternate" hreflang="en" href="../en/privacy.html">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="top">
+    <div class="wrap top-row">
+      <a class="brand" href="index.html"><img src="../assets/icon.svg" alt="" width="32" height="32"><span>My Day</span></a>
+      <nav class="lang" aria-label="Language"><a href="../vi/privacy.html" hreflang="vi" lang="vi">Tiếng Việt</a><a href="../ja/privacy.html" hreflang="ja" lang="ja">日本語</a><a href="../en/privacy.html" hreflang="en" lang="en" aria-current="true">English</a></nav>
+    </div>
+    <div class="wrap"><nav class="pages"><a href="index.html">About</a><a href="privacy.html" aria-current="page">Privacy</a><a href="terms.html">Terms</a><a href="support.html">Support</a></nav></div>
+  </header>
+  <main id="main" class="wrap">
+    <p class="banner" role="note">Draft — pending legal review. The content may change before release.</p>
+    <h1>Privacy policy</h1>
+    <p class="meta">Updated: 6 November 2026</p>
+    <p class="lead">In short: your mood journal stays on your phone, encrypted. There is no account. We do not sell data and never use your feelings to choose ads.</p>
+
+    <h2 id="publisher">1. Who provides the app</h2>
+    <p>My Day is provided by <mark class="todo">TODO: name and address of the publisher (person / company)</mark> (“we”). Privacy contact: <a href="mailto:app.myday.journal@gmail.com">app.myday.journal@gmail.com</a>.</p>
+
+    <h2 id="on-device">2. Data stored on your phone</h2>
+    <ul>
+      <li>What you enter: moods, keywords, journal, profile (age group, occupation, hobbies, area, how you get around… all optional), days off, plans, ratings of suggestions, reminder settings, consent choices.</li>
+      <li>All of it is kept in an <strong>encrypted</strong> database on the phone. The encryption key is in the phone’s secure key store (Android Keystore / iOS Keychain) and only works on that device.</li>
+      <li>The app turns off the operating system’s automatic backup for this data, so it is not copied to Google’s or Apple’s cloud.</li>
+      <li>We <strong>have no copy</strong> of this data and cannot read it. If you change phones or remove the app, the data is gone and cannot be recovered.</li>
+      <li>Your date of birth is only used to check your age; the app keeps only the year, and nothing at all if you are under the minimum age.</li>
+    </ul>
+
+    <h2 id="account">3. No account</h2>
+    <p>The app does not ask for your name, email or phone number. When you turn on AI suggestions, the app creates a <strong>random install ID</strong> (not linked to who you are) to limit how many requests can be made per day.</p>
+
+    <h2 id="ai">4. AI suggestions (optional, with your consent)</h2>
+    <p>AI suggestions only work when you turn on “Use AI suggestions” and are online. You can turn them off at any time in Settings → Privacy &amp; consent; the app then sends nothing and uses ready-made suggestions.</p>
+    <ul>
+      <li><strong>What is sent:</strong> the minimum for each request — the mood and keywords of the check-in, the journal text (only for a safety check, never to write advice), your profile in groups (e.g. age group, never your date of birth), the week’s aggregated numbers for day-off plans, your language and time-zone offset.</li>
+      <li><strong>Where it is processed:</strong> our server on Amazon Web Services in Tokyo calls the Claude model (Anthropic) through Amazon Bedrock, processed in Japan. This may be outside your country; the app asks for your separate consent to it.</li>
+      <li><strong>How long it is kept:</strong> request and response content is <strong>not stored</strong> and not used to train models. The server keeps only the random install ID, usage counters (deleted automatically after 3 days) and technical logs without content or IP address (30 days). The install ID is deleted after 400 days without use, or as soon as you delete all data in the app.</li>
+    </ul>
+
+    <h2 id="ads">5. Ads</h2>
+    <ul>
+      <li>The app shows Google AdMob ads on some screens (history, day-off plan, and rewarded ads you choose to watch). There are no ads on the check-in, advice, breathing or emergency-help screens, and none for a while after a hard day.</li>
+      <li>We <strong>never</strong> send your moods, keywords, journal or profile to AdMob, and ads are never targeted by emotion. Sensitive ad categories (gambling, alcohol, dating, loans, weight loss, mental health…) are blocked.</li>
+      <li>Google may use your device’s advertising ID and technical information under <a href="https://policies.google.com/technologies/ads">Google’s policies</a>. Where consent is required (e.g. EU/UK) the app asks with Google’s consent form (UMP); the default is non-personalised ads. On iOS the app asks for tracking permission (ATT) once.</li>
+    </ul>
+
+    <h2 id="remote">6. Remotely updated content <span class="tag">when enabled</span></h2>
+    <p>The app may download signed public content (holiday calendars, emergency numbers, activity catalogue). These requests contain no personal data; the delivery server only sees the usual technical details of a download (such as the IP address).</p>
+
+    <h2 id="tech">7. Crash reports and app attestation <span class="tag">when enabled</span></h2>
+    <ul>
+      <li><strong>Firebase Crashlytics:</strong> when the app crashes it sends a technical report (where in the code, device model, OS and app version). It never contains your journal, moods or keywords.</li>
+      <li><strong>Firebase App Check:</strong> uses Play Integrity (Android) / App Attest (iOS) so our server knows AI requests come from the genuine app.</li>
+      <li>The app does not use Firebase Analytics or any other behavioural analytics SDK.</li>
+    </ul>
+
+    <h2 id="maps">8. Google Maps (“Find nearby”)</h2>
+    <p>The app never asks for location permission. The “Find nearby” button in a plan opens Google Maps with a generic keyword (e.g. “park”); if you picked the optional “Area” in your profile, the app adds that ward or municipality and province to the keyword (e.g. “park 世田谷区 東京都”). Your area stays on your phone and is never sent to our servers or to AI. Apart from that keyword, the app sends no location, journal or other profile details to Google. Google Maps may use your location according to its own settings and <a href="https://policies.google.com/privacy">Google’s privacy policy</a>.</p>
+
+    <h2 id="notifications">9. Notifications</h2>
+    <p>Reminders are local notifications scheduled by the phone itself, and their text is always neutral (no moods or journal content).</p>
+
+    <h2 id="delete">10. Deleting your data and your rights</h2>
+    <ul>
+      <li><strong>Delete in the app:</strong> Settings → Delete all data. The app deletes the database, encryption key and settings on the phone and asks our server to delete the install ID and counters (retried when online).</li>
+      <li><strong>Uninstall:</strong> all data on the phone is removed with the app.</li>
+      <li>You can withdraw each consent (AI, personalised ads) at any time in Settings.</li>
+      <li>Because we do not hold your journal, there is nothing for us to provide or correct beyond what section 4 lists. Other questions: <a href="mailto:app.myday.journal@gmail.com">app.myday.journal@gmail.com</a>.</li>
+    </ul>
+
+    <h2 id="age">11. Age</h2>
+    <p>The app is for people aged <strong>16 and over</strong>. On first launch it asks for your date of birth; if you are under the minimum age you cannot continue and the date of birth is not stored.</p>
+
+    <h2 id="security">12. Security</h2>
+    <p>Data on the phone is encrypted; connections to our server use HTTPS; you can lock the app with a PIN or biometrics, and the app preview is blurred when you switch apps.</p>
+
+    <h2 id="changes">13. Changes to this policy</h2>
+    <p>When this policy changes we update this page and the date at the top. Important changes are announced in the app.</p>
+
+    <h2 id="contact">14. Contact</h2>
+    <p><a href="mailto:app.myday.journal@gmail.com">app.myday.journal@gmail.com</a></p>
+  </main>
+  <footer class="wrap foot">
+    <p>My Day — a daily mood journal. · <a href="mailto:app.myday.journal@gmail.com">app.myday.journal@gmail.com</a></p>
+  </footer>
+</body>
+</html>

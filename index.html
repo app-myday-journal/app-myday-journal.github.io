@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My Day</title>
+  <meta name="color-scheme" content="light dark">
+  <link rel="icon" href="assets/icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/style.css">
+  <script>
+    // Opens the page in the browser language (vi / ja / en); the links below work without script.
+    (function () {
+      var langs = (navigator.languages || [navigator.language || '']).map(function (l) { return String(l).slice(0, 2).toLowerCase(); });
+      var pick = 'en';
+      for (var i = 0; i < langs.length; i++) { if (langs[i] === 'vi' || langs[i] === 'ja' || langs[i] === 'en') { pick = langs[i]; break; } }
+      location.replace(pick + '/index.html' + location.hash);
+    })();
+  </script>
+</head>
+<body>
+  <main id="main" class="wrap chooser">
+    <img src="assets/icon.svg" alt="" width="72" height="72">
+    <h1>My Day</h1>
+    <ul class="choices">
+      <li><a href="vi/index.html" hreflang="vi" lang="vi">Tiếng Việt</a></li>
+      <li><a href="ja/index.html" hreflang="ja" lang="ja">日本語</a></li>
+      <li><a href="en/index.html" hreflang="en" lang="en">English</a></li>
+    </ul>
+  </main>
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>プライバシーポリシー — My Day</title>
+  <meta name="description" content="My Day：毎日の気分を記録。データはあなたのスマホの中だけに保存されます。">
+  <meta name="color-scheme" content="light dark">
+  <link rel="icon" href="../assets/icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../assets/style.css">
+  <link rel="alternate" hreflang="vi" href="../vi/privacy.html">
+  <link rel="alternate" hreflang="ja" href="../ja/privacy.html">
+  <link rel="alternate" hreflang="en" href="../en/privacy.html">
+</head>
+<body>
+  <a class="skip" href="#main">本文へスキップ</a>
+  <header class="top">
+    <div class="wrap top-row">
+      <a class="brand" href="index.html"><img src="../assets/icon.svg" alt="" width="32" height="32"><span>My Day</span></a>
+      <nav class="lang" aria-label="言語"><a href="../vi/privacy.html" hreflang="vi" lang="vi">Tiếng Việt</a><a href="../ja/privacy.html" hreflang="ja" lang="ja" aria-current="true">日本語</a><a href="../en/privacy.html" hreflang="en" lang="en">English</a></nav>
+    </div>
+    <div class="wrap"><nav class="pages"><a href="index.html">紹介</a><a href="privacy.html" aria-current="page">プライバシー</a><a href="terms.html">利用規約</a><a href="support.html">サポート</a></nav></div>
+  </header>
+  <main id="main" class="wrap">
+    <p class="banner" role="note">草案 — 弁護士の確認待ちです。公開前に内容が変わる場合があります。</p>
+    <h1>プライバシーポリシー</h1>
+    <p class="meta">更新日: 2026年11月6日</p>
+    <p class="lead">概要：あなたの気分日記は暗号化され、あなたのスマホの中だけに保存されます。アカウントはありません。データを販売することはなく、気分をもとに広告を選ぶこともありません。</p>
+
+    <h2 id="publisher">1. 提供者</h2>
+    <p>My Day は <mark class="todo">TODO：提供者（個人／法人）の名称・所在地</mark>（以下「当方」）が提供します。プライバシーに関するお問い合わせ：<a href="mailto:app.myday.journal@gmail.com">app.myday.journal@gmail.com</a></p>
+
+    <h2 id="on-device">2. スマホに保存されるデータ</h2>
+    <ul>
+      <li>あなたが入力した内容：気分、キーワード、日記、プロフィール（年代・職業・趣味・お住まいの地域・移動手段など、すべて任意）、休日、プラン、提案への評価、リマインダー設定、同意の記録。</li>
+      <li>これらはスマホ内の<strong>暗号化された</strong>データベースに保存されます。暗号鍵は端末の安全な鍵保管領域（Android Keystore／iOS キーチェーン）にあり、その端末でのみ使えます。</li>
+      <li>このデータは OS の自動バックアップの対象外のため、Google や Apple のクラウドにはコピーされません。</li>
+      <li>当方はこのデータの<strong>コピーを持たず</strong>、読むこともできません。機種変更やアプリの削除をすると、データは失われ復元できません。</li>
+      <li>生年月日は年齢確認にのみ使い、保存するのは生まれた年だけです。年齢に満たない場合は何も保存しません。</li>
+    </ul>
+
+    <h2 id="account">3. アカウント不要</h2>
+    <p>名前・メールアドレス・電話番号は不要です。AI による提案を有効にすると、1日の利用回数を管理するために、あなたの身元とは結びつかない<strong>ランダムなインストールID</strong>を作成します。</p>
+
+    <h2 id="ai">4. AI による提案（任意・同意が必要）</h2>
+    <p>AI による提案は「AIの提案を使う」をオンにし、ネットに接続しているときだけ動作します。設定 → プライバシーと同意 からいつでもオフにでき、オフにすると何も送信されず、あらかじめ用意した提案を使います。</p>
+    <ul>
+      <li><strong>送信する内容：</strong>リクエストごとに必要最小限の内容 — そのチェックインの気分とキーワード、日記（安全確認のためだけに使い、アドバイスの作成には使いません）、グループ化したプロフィール（例：年代。生年月日は送りません）、休日プラン用の1週間の集計、言語とタイムゾーンの時差。</li>
+      <li><strong>処理する場所：</strong>Amazon Web Services 東京リージョンにある当方のサーバーが、Amazon Bedrock 経由で Claude（Anthropic）のモデルを呼び出し、日本国内で処理します。お住まいの国の外になる場合があるため、別途同意をいただきます。</li>
+      <li><strong>保存期間：</strong>リクエストと応答の内容は<strong>保存されず</strong>、モデルの学習にも使われません。サーバーが保持するのは、ランダムなインストールID、利用回数カウンター（3日後に自動削除）、内容と IP アドレスを含まない技術ログ（30日間）だけです。インストールIDは 400日間使われないと自動削除され、アプリで全データを削除したときにもすぐ削除されます。</li>
+    </ul>
+
+    <h2 id="ads">5. 広告</h2>
+    <ul>
+      <li>一部の画面（履歴、休日プラン、あなたが選んで見るリワード広告）で Google AdMob の広告を表示します。チェックイン、アドバイス、呼吸エクササイズ、緊急サポートの画面には広告はなく、つらい日のあとしばらくは広告を表示しません。</li>
+      <li>気分・キーワード・日記・プロフィールを AdMob に送ることは<strong>決してなく</strong>、気分による広告のターゲティングも行いません。ギャンブル、お酒、出会い、ローン、ダイエット、メンタルヘルスなどのセンシティブな広告カテゴリはブロックしています。</li>
+      <li>Google は <a href="https://policies.google.com/technologies/ads">Google のポリシー</a>に従い、端末の広告IDや技術情報を使うことがあります。同意が必要な地域（EU・英国など）では Google の同意フォーム（UMP）でおたずねし、初期設定はパーソナライズしない広告です。iOS ではトラッキングの許可（ATT）を一度だけおたずねします。</li>
+    </ul>
+
+    <h2 id="remote">6. コンテンツの遠隔更新 <span class="tag">有効時</span></h2>
+    <p>署名付きの公開コンテンツ（祝日カレンダー、緊急電話番号、アクティビティ一覧）をダウンロードすることがあります。このリクエストに個人データは含まれず、配信サーバーには通常のダウンロードの技術情報（IP アドレスなど）だけが届きます。</p>
+
+    <h2 id="tech">7. クラッシュレポートとアプリの認証 <span class="tag">有効時</span></h2>
+    <ul>
+      <li><strong>Firebase Crashlytics：</strong>アプリに不具合が起きたとき、技術的なレポート（コード内のエラー箇所、機種、OS とアプリのバージョン）を送ります。日記・気分・キーワードは決して含みません。</li>
+      <li><strong>Firebase App Check：</strong>Play Integrity（Android）／App Attest（iOS）により、AI へのリクエストが正規のアプリからのものかをサーバーが確認します。</li>
+      <li>Firebase Analytics などの行動分析 SDK は使用しません。</li>
+    </ul>
+
+    <h2 id="maps">8. Google マップ（「近くで探す」）</h2>
+    <p>アプリは位置情報の権限を求めません。プランの「近くで探す」ボタンは、一般的なキーワード（例：「公園」）で Google マップを開きます。プロフィールの「地域」（任意）を選んでいる場合は、その市区町村と都道府県の名前をキーワードに加えます（例：「公園 世田谷区 東京都」）。地域は端末の中だけに保存され、当社のサーバーやAIには送られません。このキーワード以外に、位置情報・日記・その他のプロフィール情報を Google に送ることはありません。Google マップは独自の設定と <a href="https://policies.google.com/privacy">Google のプライバシーポリシー</a>に従って位置情報を使うことがあります。</p>
+
+    <h2 id="notifications">9. 通知</h2>
+    <p>リマインダーはスマホ自身が予約するローカル通知で、内容は常に中立的です（気分や日記は表示しません）。</p>
+
+    <h2 id="delete">10. データの削除とあなたの権利</h2>
+    <ul>
+      <li><strong>アプリ内で削除：</strong>設定 → すべてのデータを削除。端末のデータベース、暗号鍵、設定を削除し、サーバーにインストールIDとカウンターの削除を依頼します（オフラインの場合は接続時に再試行）。</li>
+      <li><strong>アプリを削除：</strong>端末のデータはアプリと一緒にすべて削除されます。</li>
+      <li>各同意（AI、パーソナライズ広告）は設定からいつでも撤回できます。</li>
+      <li>当方は日記データを保持していないため、第4項に記載のもの以外に開示・訂正できるデータはありません。その他のご質問：<a href="mailto:app.myday.journal@gmail.com">app.myday.journal@gmail.com</a></li>
+    </ul>
+
+    <h2 id="age">11. 年齢</h2>
+    <p>本アプリは <strong>16歳以上</strong>の方が対象です。初回起動時に生年月日をおたずねし、年齢に満たない場合は利用できず、生年月日も保存しません。</p>
+
+    <h2 id="security">12. セキュリティ</h2>
+    <p>端末内のデータは暗号化され、サーバーとの通信は HTTPS を使います。PIN や生体認証でアプリをロックでき、アプリ切り替え時のプレビューはぼかされます。</p>
+
+    <h2 id="changes">13. ポリシーの変更</h2>
+    <p>変更する場合はこのページと冒頭の更新日を更新します。重要な変更はアプリ内でお知らせします。</p>
+
+    <h2 id="contact">14. お問い合わせ</h2>
+    <p><a href="mailto:app.myday.journal@gmail.com">app.myday.journal@gmail.com</a></p>
+  </main>
+  <footer class="wrap foot">
+    <p>My Day — 毎日の気分日記。 · <a href="mailto:app.myday.journal@gmail.com">app.myday.journal@gmail.com</a></p>
+  </footer>
+</body>
+</html>

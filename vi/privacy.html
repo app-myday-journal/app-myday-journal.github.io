@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Chính sách quyền riêng tư — My Day</title>
+  <meta name="description" content="My Day: ghi lại cảm xúc mỗi ngày, dữ liệu chỉ nằm trên điện thoại của bạn.">
+  <meta name="color-scheme" content="light dark">
+  <link rel="icon" href="../assets/icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../assets/style.css">
+  <link rel="alternate" hreflang="vi" href="../vi/privacy.html">
+  <link rel="alternate" hreflang="ja" href="../ja/privacy.html">
+  <link rel="alternate" hreflang="en" href="../en/privacy.html">
+</head>
+<body>
+  <a class="skip" href="#main">Bỏ qua tới nội dung</a>
+  <header class="top">
+    <div class="wrap top-row">
+      <a class="brand" href="index.html"><img src="../assets/icon.svg" alt="" width="32" height="32"><span>My Day</span></a>
+      <nav class="lang" aria-label="Ngôn ngữ"><a href="../vi/privacy.html" hreflang="vi" lang="vi" aria-current="true">Tiếng Việt</a><a href="../ja/privacy.html" hreflang="ja" lang="ja">日本語</a><a href="../en/privacy.html" hreflang="en" lang="en">English</a></nav>
+    </div>
+    <div class="wrap"><nav class="pages"><a href="index.html">Giới thiệu</a><a href="privacy.html" aria-current="page">Quyền riêng tư</a><a href="terms.html">Điều khoản</a><a href="support.html">Hỗ trợ</a></nav></div>
+  </header>
+  <main id="main" class="wrap">
+    <p class="banner" role="note">Bản nháp — chờ luật sư duyệt. Nội dung có thể thay đổi trước khi phát hành.</p>
+    <h1>Chính sách quyền riêng tư</h1>
+    <p class="meta">Cập nhật: 06/11/2026</p>
+    <p class="lead">Tóm tắt: nhật ký cảm xúc của bạn chỉ nằm trên điện thoại của bạn, được mã hóa. Không có tài khoản. Chúng tôi không bán dữ liệu và không dùng cảm xúc của bạn để chọn quảng cáo.</p>
+
+    <h2 id="phat-hanh">1. Ai phát hành app</h2>
+    <p>App My Day do <mark class="todo">TODO: tên cá nhân / pháp nhân phát hành, địa chỉ</mark> phát hành (“chúng tôi”). Liên hệ về quyền riêng tư: <a href="mailto:app.myday.journal@gmail.com">app.myday.journal@gmail.com</a>.</p>
+
+    <h2 id="tren-may">2. Dữ liệu lưu trên máy của bạn</h2>
+    <ul>
+      <li>Những gì bạn nhập: cảm xúc, từ khóa, nhật ký, hồ sơ (nhóm tuổi, nghề nghiệp, sở thích, khu vực sống, phương tiện đi lại… đều tùy chọn), ngày nghỉ, kế hoạch, đánh giá gợi ý, cài đặt nhắc nhở, lựa chọn đồng ý.</li>
+      <li>Tất cả được lưu trong cơ sở dữ liệu <strong>mã hóa</strong> trên điện thoại. Khóa mã hóa nằm trong kho khóa an toàn của máy (Android Keystore / iOS Keychain), chỉ dùng được trên máy đó.</li>
+      <li>App tắt sao lưu tự động của hệ điều hành cho dữ liệu này, nên nó không được chép lên đám mây của Google hay Apple.</li>
+      <li>Chúng tôi <strong>không có bản sao</strong> dữ liệu này và không đọc được nó. Đổi máy hoặc gỡ app thì dữ liệu mất và không lấy lại được.</li>
+      <li>Ngày sinh chỉ dùng để kiểm tra tuổi; app chỉ giữ năm sinh, và không giữ gì nếu bạn chưa đủ tuổi.</li>
+    </ul>
+
+    <h2 id="tai-khoan">3. Không có tài khoản</h2>
+    <p>App không yêu cầu tên, email hay số điện thoại. Khi bạn bật gợi ý AI, app tạo một <strong>mã cài đặt ngẫu nhiên</strong> (không gắn với danh tính của bạn) để giới hạn số lượt dùng mỗi ngày.</p>
+
+    <h2 id="ai">4. Gợi ý AI (tùy chọn, cần bạn đồng ý)</h2>
+    <p>Gợi ý AI chỉ hoạt động khi bạn bật “Dùng gợi ý AI” và có mạng. Bạn có thể tắt bất cứ lúc nào trong Cài đặt → Quyền riêng tư &amp; đồng ý; khi tắt, app không gửi gì nữa và dùng gợi ý soạn sẵn.</p>
+    <ul>
+      <li><strong>Gửi gì:</strong> nội dung tối thiểu cho từng yêu cầu — cảm xúc và từ khóa của lần check-in, nhật ký (chỉ để kiểm tra an toàn, không dùng để viết lời khuyên), hồ sơ ở dạng nhóm (ví dụ nhóm tuổi, không gửi ngày sinh), số liệu tổng hợp của tuần cho kế hoạch ngày nghỉ, ngôn ngữ và lệch múi giờ.</li>
+      <li><strong>Xử lý ở đâu:</strong> máy chủ của chúng tôi trên Amazon Web Services tại Tokyo, gọi mô hình Claude (Anthropic) qua Amazon Bedrock, xử lý tại Nhật Bản. Đây có thể là ngoài quốc gia của bạn; app hỏi bạn đồng ý riêng cho việc này.</li>
+      <li><strong>Lưu bao lâu:</strong> nội dung yêu cầu và câu trả lời <strong>không được lưu</strong> và không dùng để huấn luyện mô hình. Máy chủ chỉ giữ mã cài đặt ngẫu nhiên, bộ đếm lượt dùng (tự xóa sau 3 ngày) và nhật ký kỹ thuật không có nội dung, không có địa chỉ IP (giữ 30 ngày). Mã cài đặt tự xóa sau 400 ngày không dùng, hoặc ngay khi bạn xóa toàn bộ dữ liệu trong app.</li>
+    </ul>
+
+    <h2 id="quang-cao">5. Quảng cáo</h2>
+    <ul>
+      <li>App hiển thị quảng cáo của Google AdMob ở một số màn hình (lịch sử, kế hoạch ngày nghỉ, và quảng cáo có thưởng do bạn chọn xem). Không có quảng cáo ở màn hình check-in, lời khuyên, bài thở và hỗ trợ khẩn cấp, và không có quảng cáo một thời gian sau một ngày khó khăn.</li>
+      <li>Chúng tôi <strong>không bao giờ</strong> gửi cảm xúc, từ khóa, nhật ký hay hồ sơ của bạn cho AdMob, và không nhắm quảng cáo theo cảm xúc. Các danh mục quảng cáo nhạy cảm (cờ bạc, rượu bia, hẹn hò, vay tiền, giảm cân, sức khỏe tâm thần…) bị chặn.</li>
+      <li>Google có thể dùng mã quảng cáo của thiết bị và thông tin kỹ thuật theo <a href="https://policies.google.com/technologies/ads">chính sách của Google</a>. Ở các khu vực cần sự đồng ý (ví dụ EU/Anh), app hỏi bằng biểu mẫu đồng ý của Google (UMP); mặc định là quảng cáo không cá nhân hóa. Trên iOS, app hỏi quyền theo dõi (ATT) một lần.</li>
+    </ul>
+
+    <h2 id="cau-hinh">6. Nội dung cập nhật từ xa <span class="tag">khi bật</span></h2>
+    <p>App có thể tải nội dung công khai đã ký số (lịch ngày lễ, số điện thoại khẩn cấp, danh mục hoạt động). Yêu cầu này không chứa dữ liệu cá nhân của bạn; máy chủ phân phối chỉ thấy thông tin kỹ thuật thông thường của một lần tải (như địa chỉ IP).</p>
+
+    <h2 id="ky-thuat">7. Báo lỗi và xác thực app <span class="tag">khi bật</span></h2>
+    <ul>
+      <li><strong>Firebase Crashlytics:</strong> khi app gặp lỗi, gửi báo cáo kỹ thuật (vị trí lỗi trong mã, mẫu máy, phiên bản hệ điều hành và app). Không bao giờ chứa nhật ký, cảm xúc hay từ khóa.</li>
+      <li><strong>Firebase App Check:</strong> dùng Play Integrity (Android) / App Attest (iOS) để máy chủ biết yêu cầu AI đến từ app thật.</li>
+      <li>App không dùng Firebase Analytics hay SDK phân tích hành vi nào khác.</li>
+    </ul>
+
+    <h2 id="ban-do">8. Google Maps (“Tìm gần đây”)</h2>
+    <p>App không xin quyền vị trí. Nút “Tìm gần đây” trong kế hoạch mở Google Maps với một từ khóa chung (ví dụ “công viên”); nếu bạn đã chọn mục “Khu vực” (tùy chọn) trong hồ sơ, app thêm tên phường/xã và tỉnh/thành đó vào từ khóa (ví dụ “công viên Phường Bến Thành TP. Hồ Chí Minh”). Khu vực chỉ lưu trên máy và không được gửi cho máy chủ của chúng tôi hay AI. Ngoài từ khóa đó, app không gửi vị trí, nhật ký hay thông tin hồ sơ nào khác cho Google. Google Maps có thể dùng vị trí theo cài đặt và <a href="https://policies.google.com/privacy">chính sách của Google</a>.</p>
+
+    <h2 id="thong-bao">9. Thông báo</h2>
+    <p>Nhắc nhở là thông báo cục bộ do chính điện thoại lập lịch, nội dung luôn trung tính (không hiện cảm xúc hay nhật ký).</p>
+
+    <h2 id="xoa">10. Xóa dữ liệu và quyền của bạn</h2>
+    <ul>
+      <li><strong>Xóa trong app:</strong> Cài đặt → Xóa toàn bộ dữ liệu. App xóa cơ sở dữ liệu, khóa mã hóa và cài đặt trên máy, và yêu cầu máy chủ xóa mã cài đặt cùng bộ đếm (thử lại khi có mạng).</li>
+      <li><strong>Gỡ app:</strong> toàn bộ dữ liệu trên máy bị xóa cùng app.</li>
+      <li>Bạn có thể rút lại từng sự đồng ý (AI, quảng cáo cá nhân hóa) bất cứ lúc nào trong Cài đặt.</li>
+      <li>Vì chúng tôi không giữ dữ liệu nhật ký của bạn, chúng tôi không có gì để cung cấp hay sửa ngoài những gì nêu ở mục 4. Câu hỏi khác: <a href="mailto:app.myday.journal@gmail.com">app.myday.journal@gmail.com</a>.</li>
+    </ul>
+
+    <h2 id="tuoi">11. Độ tuổi</h2>
+    <p>App dành cho người từ <strong>16 tuổi</strong>. Khi mở lần đầu, app hỏi ngày sinh; nếu chưa đủ tuổi, app không cho dùng tiếp và không lưu ngày sinh.</p>
+
+    <h2 id="bao-mat">12. Bảo mật</h2>
+    <p>Dữ liệu trên máy được mã hóa; kết nối tới máy chủ dùng HTTPS; bạn có thể bật khóa app bằng PIN hoặc sinh trắc học, và ảnh xem trước của app được làm mờ khi chuyển app.</p>
+
+    <h2 id="thay-doi">13. Thay đổi chính sách</h2>
+    <p>Khi chính sách thay đổi, chúng tôi cập nhật trang này và ngày cập nhật ở đầu trang. Thay đổi quan trọng sẽ được thông báo trong app.</p>
+
+    <h2 id="lien-he">14. Liên hệ</h2>
+    <p><a href="mailto:app.myday.journal@gmail.com">app.myday.journal@gmail.com</a></p>
+  </main>
+  <footer class="wrap foot">
+    <p>My Day — nhật ký cảm xúc mỗi ngày. · <a href="mailto:app.myday.journal@gmail.com">app.myday.journal@gmail.com</a></p>
+  </footer>
+</body>
+</html>
